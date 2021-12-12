@@ -4,7 +4,7 @@
   become: no
   gather_facts: no
   roles:
-    - vscode
-    - dotfiles
     - macos
     - brew
+    - dotfiles
+    - vscode

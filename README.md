@@ -9,6 +9,22 @@ set up my MacBook via Ansible
 - Ansible >= 2.12.1
 - Python >= 3.5 [Ansible Docs -> Python 3 Support](https://docs.ansible.com/ansible/latest/reference_appendices/python_3_support.html)
 
+## Installation
+
+```
+xcode-select --install
+```
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+```
+brew install ansible
+```
+```
+git clone https://github.com/mannjaro/setup-my-mac.git ~/src/github.com/mannjaro/setup
+ansible-playbook ~/src/github.com/mannjaro/setup/site.yml
+```
+
 ## Install List
 ```yaml
 brew:
