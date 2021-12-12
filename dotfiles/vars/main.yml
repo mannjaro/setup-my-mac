@@ -1,0 +1,5 @@
+---
+# vars file for dotfiles
+url: https://github.com/mannjaro/dotfiles.git
+dst: ~/.dotfiles
+script_path: "{{ dst }}/startup.sh"

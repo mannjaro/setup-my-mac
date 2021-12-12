@@ -1,0 +1,81 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    // Latex Workshop
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.snm",
+        "*.nav",
+        "*.dvi",
+        "*.synctex.gz"
+    ],
+    "latex-workshop.latex.outDir": "out",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+    ],
+
+    // ビルドのレシピに使われるパーツ
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-silent",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+        },
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "editor.minimap.enabled": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "[python]": {
+        "editor.wordBasedSuggestions": false,
+        "editor.formatOnSave": true,
+    },
+    "python.showStartPage": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "python.languageServer": "Pylance",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "editor.fontFamily": "HackGen",
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 13,
+    "python.formatting.provider": "black",
+    "editor.bracketPairColorization.enabled": true,
+    "go.toolsManagement.autoUpdate": true,
+    "redhat.telemetry.enabled": true,
+    "editor.formatOnSave": true
+}

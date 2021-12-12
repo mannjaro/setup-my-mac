@@ -1,0 +1,61 @@
+---
+# vars file for macos
+global_defaults:
+  - key: AppleShowAllExtensions
+    type: bool
+    value: true
+  
+  - key: AppleLanguages
+    type: array
+    value:
+      - "en-JP"
+      - "ja-JP"  
+  
+  - key: AppleLocale
+    type: string
+    value: "en_JP"
+
+  - key: AppleMeasurementUnits
+    type: string
+    value: Centimeters
+
+  - key: AppleTemperatureUnit
+    type: string
+    value: Celsius
+
+  - key: com.apple.mouse.tapBehavior
+    type: int
+    value: 1
+
+desktop_services:
+  - domain: com.apple.desktopservices
+    key: DSDontWriteNetworkStores
+    type: bool
+    value: true
+  
+  - domain: com.apple.desktopservices
+    key: DSDontWriteUSBStores
+    type: bool
+    value: true
+  
+dock_services:
+  - domain: com.apple.dock
+    key: tilesize
+    type: float
+    value: 80
+  - domain: com.apple.dock
+    key: magnification
+    type: bool
+    value: true
+  - domain: com.apple.dock
+    key: largesize
+    type: float
+    value: 100
+  - domain: com.apple.dock
+    key: orientation
+    type: string
+    value: left
+  - domain: com.apple.dock
+    key: autohide
+    type: bool
+    value: true

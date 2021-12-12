@@ -1,0 +1,9 @@
+---
+# tasks file for dotfiles
+- name: Clone dotfiles
+  ansible.builtin.git:
+    repo: "{{ url }}"
+    dest: "{{ dst }}"
+
+- name: Make Symlink
+  ansible.builtin.command: sh "{{ script_path }}"

@@ -1,0 +1,5 @@
+---
+# tasks file for vscode
+- name: Install Extensions
+  ansible.builtin.command: code --install-extension "{{ item }}"
+  loop: "{{ extensions }}"

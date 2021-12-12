@@ -1,0 +1,3 @@
+---
+# tasks file for macos
+- ansible.builtin.import_tasks: setup.yml
